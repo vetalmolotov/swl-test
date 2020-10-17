@@ -13,7 +13,7 @@ const dirAssets = path.join(__dirname, 'assets');
 module.exports = env => {
     // Is the current build a development build
     const IS_DEV = !!env.dev;
-    
+
     return {
         entry: {
             vendor: [
@@ -31,10 +31,10 @@ module.exports = env => {
         },
         plugins: [
             new webpack.DefinePlugin({ IS_DEV }),
-    
+
             new HtmlWebpackPlugin({
                 template: path.join(__dirname, 'index.ejs'),
-                title: 'Webpack Boilerplate'
+                title: 'Swivl test '
             })
         ],
         module: {
@@ -48,7 +48,7 @@ module.exports = env => {
                         compact: true
                     }
                 },
-    
+
                 // STYLES
                 {
                     test: /\.css$/,
@@ -62,7 +62,7 @@ module.exports = env => {
                         },
                     ]
                 },
-    
+
                 // CSS / SASS
                 {
                     test: /\.scss/,
@@ -85,10 +85,28 @@ module.exports = env => {
                         }
                     ]
                 },
-    
+
                 // IMAGES
                 {
                     test: /\.(jpe?g|png|gif)$/,
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name].[ext]'
+                    }
+                },
+
+                // FONTS
+                {
+                    test: /\.(eot|svg|ttf|woff|woff2)$/,
+                    loader: 'file-loader',
+                    options: {
+                            name: '[name].[ext]'
+                        }
+                },
+
+                // ICONS
+                {
+                    test: /\.svg$/,
                     loader: 'file-loader',
                     options: {
                         name: '[path][name].[ext]'

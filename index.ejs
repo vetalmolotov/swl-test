@@ -6,9 +6,91 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div class="content">
-        <h1>Webpack Boilerplate</h1>
-        <h3>Replace this page with your own code</h3>
+    <div class="page">
+        <div class="page-head">
+            <header class="header page-head__layout">
+                <section class="header__left">
+                    <div class="header-logo">
+                        <a href="#" class="logo">
+                            <img alt="" src="assets/images/logo.png">
+                        </a>
+                    </div>
+                    <div class="header-menu">
+                        <nav class="menu menu__list">
+                            <a href="#" class="menu__item menu__item--active">FEED</a>
+                            <a href="#" class="menu__item">EXPLORE</a>
+                            <a href="#" class="menu__item">DISCUSSIONS</a>
+                        </nav>
+                    </div>
+                </section>
+                <section class="header__right">
+                    <div class="profile">
+                        <div class="profile__section">
+                            <div class="profile__main">
+                                <div class="profile__name">Arthur Wood</div>
+                                <div class="profile__pic">
+                                    <img alt="" src="assets/images/profile-pic.png">
+                                </div>
+                                <div class="profile__menu"></div>
+                            </div>
+                            <div class="profile__actions actions">
+                                <a href="#" class="actions__item">
+                                    <img alt="" src="assets/images/notifications.png">
+                                </a>
+                                <a href="#" class="actions__item">
+                                    <img alt="" src="assets/images/share.png">
+                                </a>
+                                <a href="#" class="actions__item">
+                                    <img alt="" src="assets/images/medium.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="header__button">
+                        <img alt="" src="assets/images/cross.png">
+                    </a>
+                </section>
+            </header>
+        </div>
+        <section class="page-content">
+            <div class="user page-content__layout">
+                <div class="user-details">
+                    <div class="user-details__layout">
+                        <div class="user-details__avatar">
+                            <img alt="" src="assets/images/avatar.png">
+                        </div>
+                        <div class="user-details__info">
+                            <div class="user-details__name">
+                                Benjamin
+                                Clementine
+                            </div>
+                            <div class="user-details__tag">
+                                @benclementine
+                            </div>
+                            <a href="#" class="user-details__action">
+                                <img alt="" src="assets/images/edit-icon.png">
+                                <span>Edit Profile</span>
+                            </a>
+                        </div>
+                        <div class="user-details__stat">
+                            <p>
+                                <span>45</span>
+                                <span>synths</span>
+                            </p>
+                            <p>
+                                <span>110</span>
+                                <span>followers</span>
+                            </p>
+                            <p>
+                                <span>322</span>
+                                <span>following</span>
+                            </p>
+                        </div>
+                        <div class="user-details__description"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>

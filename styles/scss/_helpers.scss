@@ -1,0 +1,36 @@
+@mixin vcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin flex-hc {
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-vc {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-hvc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../../assets/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../../assets/fonts/OpenSans-Light.ttf");
+}
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url("../../assets/fonts/OpenSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: "MontserratSemiBold";
+    src: url("../../assets/fonts/Montserrat-SemiBold.ttf");
+}

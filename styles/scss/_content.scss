@@ -1,0 +1,60 @@
+.user {
+    &__layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.user-details {
+    &__layout {
+        display: flex;
+        flex-wrap: wrap;
+        width: 420px;
+        padding: 40px 35px;
+    }
+    &__avatar {
+        width: 120px;
+        height: 120px;
+    }
+    &__info {
+        width: 100%;
+        max-width: 145px;
+        padding-left: 24px;
+    }
+    &__name {
+        color: #3E3F58;
+        font-size: 24px;
+        line-height: 26px;
+        font-family: MontserratSemiBold;
+        margin-bottom: 8px;
+    }
+    &__tag {
+        color: #3E3F58;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: OpenSansLight;
+        margin-bottom: 16px;
+    }
+    &__action {
+        @include flex-vc;
+        height: 20px;
+        text-decoration: none;
+        color: #F05D63;
+        font-family: OpenSansRegular;
+        img {
+            height: 20px;
+            margin-right: 8px;
+        }
+        span {
+            text-decoration: underline;
+        }
+    }
+    &__stat {
+        display: flex;
+        padding-top: 32px;
+        p {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

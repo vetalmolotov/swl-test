@@ -1,9 +1,39 @@
-// Apply a natural box layout model to all elements
-// but allowing components to change
-// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-html {
-    box-sizing: border-box;
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import "_helpers.scss";
+
+@import "_header.scss";
+@import "_content.scss";
+
+html, body, .page {
+    height: 100%;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+body {
+    background: #F2F2F2;
+    font-family: OpenSansRegular;
+}
+.page {
+    @include flex-hc;
+    flex-direction: column;
+    &-head {
+        @include flex-hc;
+        flex: 0 0 auto;
+        background: #fff;
+        box-shadow: 0 12px 12px rgba(0, 0, 0, 0.06);
+        &__layout {
+            width: 100%;
+            max-width: 1440px;
+            height: 112px;
+            padding: 0 135px;
+        }
+    }
+    &-content {
+        @include flex-hc;
+        flex: 1 0 auto;
+        &__layout {
+            width: 100%;
+            max-width: 1440px;
+            padding: 32px 100px;
+        }
+    }
 }
