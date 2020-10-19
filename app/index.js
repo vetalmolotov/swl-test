@@ -2,9 +2,13 @@
  * Application entry point
  */
 
-// Load application styles
 import 'scss/_index.scss';
+const menu = document.getElementById("user-menu");
+const menuButton = document.getElementById("user-menu-button");
 
-// ================================
-// START YOUR APP HERE
-// ================================
+const showUserMenu = () => { menu.classList.add('active') }
+const hideUserMenu = () => { menu.classList.remove('active') }
+
+menuButton.addEventListener("click", showUserMenu);
+menu.addEventListener('click', hideUserMenu)
+

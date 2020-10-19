@@ -9,31 +9,37 @@ html, body, .page {
     height: 100%;
 }
 body {
-    background: #F2F2F2;
+    background: rgba(236, 241, 248, 0.4);
     font-family: OpenSansRegular;
 }
 .page {
-    @include flex-hc;
-    flex-direction: column;
     &-head {
         @include flex-hc;
-        flex: 0 0 auto;
         background: #fff;
         box-shadow: 0 12px 12px rgba(0, 0, 0, 0.06);
         &__layout {
             width: 100%;
-            max-width: 1440px;
+            max-width: 1240px;
             height: 112px;
-            padding: 0 135px;
+            padding: 0 35px;
+            @media screen and (max-width: 520px) {
+                padding: 0 16px;
+            }
         }
     }
     &-content {
         @include flex-hc;
-        flex: 1 0 auto;
         &__layout {
+            display: flex;
             width: 100%;
-            max-width: 1440px;
-            padding: 32px 100px;
+            max-width: 1240px;
+            padding: 32px 35px;
+            @media screen and (max-width: 1024px) {
+                flex-direction: column;
+            }
+            @media screen and (max-width: 520px) {
+                padding: 16px;
+            }
         }
     }
 }

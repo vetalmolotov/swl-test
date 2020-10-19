@@ -34,15 +34,9 @@
                                 <div class="profile__menu"></div>
                             </div>
                             <div class="profile__actions actions">
-                                <a href="#" class="actions__item">
-                                    <img alt="" src="assets/images/notifications.png">
-                                </a>
-                                <a href="#" class="actions__item">
-                                    <img alt="" src="assets/images/share.png">
-                                </a>
-                                <a href="#" class="actions__item">
-                                    <img alt="" src="assets/images/medium.png">
-                                </a>
+                                <a href="#" class="actions__item actions__item--notice"></a>
+                                <a href="#" class="actions__item actions__item--share"></a>
+                                <a href="#" class="actions__item actions__item--medium"></a>
                             </div>
                         </div>
                     </div>
@@ -54,8 +48,15 @@
         </div>
         <section class="page-content">
             <div class="user page-content__layout">
-                <div class="user-details">
+                <div class="user-details user__left">
                     <div class="user-details__layout">
+                        <div class="user-details__menu user-menu">
+                            <div class="user-menu__button"  id="user-menu-button"></div>
+                            <div class="user-menu__list" id="user-menu">
+                                <div class="user-menu__item user-menu__item--report">Report User</div>
+                                <div class="user-menu__item user-menu__item--block">Block User</div>
+                            </div>
+                        </div>
                         <div class="user-details__avatar">
                             <img alt="" src="assets/images/avatar.png">
                         </div>
@@ -73,20 +74,127 @@
                             </a>
                         </div>
                         <div class="user-details__stat">
-                            <p>
-                                <span>45</span>
+                            <a href="#">
+                                <strong>45</strong>
                                 <span>synths</span>
-                            </p>
-                            <p>
-                                <span>110</span>
+                            </a>
+                            <a href="#">
+                                <strong>110</strong>
                                 <span>followers</span>
-                            </p>
-                            <p>
-                                <span>322</span>
+                            </a>
+                            <a href="#">
+                                <strong>322</strong>
                                 <span>following</span>
-                            </p>
+                            </a>
                         </div>
-                        <div class="user-details__description"></div>
+                        <div class="user-details__description">
+                            Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each, according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
+                        </div>
+                    </div>
+                </div>
+                <div class="user-content user__right">
+                    <div class="user-content__layout">
+                        <div class="user-panel user-content__panel">
+                            <form class="user-panel__layout">
+                                <label class="user-panel__switcher" for="public">
+                                    public
+                                </label>
+                                <input type="radio" id="public" name="public">
+                                <div class="user-panel__state">
+                                    <p>&nbsp;</p>
+                                </div>
+                                <label class="user-panel__switcher" for="private">
+                                    private
+                                </label>
+                                <input type="radio" id="private" name="public">
+                            </form>
+                        </div>
+                        <div class="user-cards">
+
+                            <div class="user-card">
+                                <div class="user-card__layout">
+                                    <div class="user-card__top"></div>
+                                    <div class="user-card__main">
+                                        New air routes that promise cheap flights in
+                                    </div>
+                                    <div class="user-card__bottom">
+                                        <div class="user-card__profile">
+                                            <div class="user-card__avatar"></div>
+                                            <div class="user-card__name">Gregory Watkins</div>
+                                        </div>
+                                        <div class="user-card__share">
+                                            Share
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-card">
+                                <div class="user-card__layout">
+                                    <div class="user-card__top"></div>
+                                    <div class="user-card__main">
+                                        New air routes that promise cheap flights in
+                                    </div>
+                                    <div class="user-card__bottom">
+                                        <div class="user-card__profile">
+                                            <div class="user-card__avatar"></div>
+                                            <div class="user-card__name">Gregory Watkins</div>
+                                        </div>
+                                        <div class="user-card__share">
+                                            Share
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-card">
+                                <div class="user-card__layout">
+                                    <div class="user-card__top">
+                                        <div class="user-card__title">Shared to</div>
+                                        <div class="user-card__hashtag">
+                                            <p>#discussionaboutanimgttddsoutanimgttdds…</p>
+                                        </div>
+                                    </div>
+                                    <div class="user-card__main">
+                                        New air routes that promise cheap flights in
+                                    </div>
+                                    <div class="user-card__bottom">
+                                        <div class="user-card__profile">
+                                            <div class="user-card__avatar"></div>
+                                            <div class="user-card__name">Gregory Watkins</div>
+                                        </div>
+                                        <div class="user-card__stat">
+                                            <p class="user-card__stat__viewed">88</p>
+                                            <p class="user-card__stat__liked">44</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-card">
+                                <div class="user-card__layout">
+                                    <div class="user-card__top">
+                                        <div class="user-card__title user-card__title--weblink">
+                                            Shared via weblink
+                                        </div>
+                                    </div>
+                                    <div class="user-card__main">
+                                        New air routes that promise cheap flights in
+                                    </div>
+                                    <div class="user-card__bottom">
+                                        <div class="user-card__profile">
+                                            <div class="user-card__avatar"></div>
+                                            <div class="user-card__name">Gregory Watkins</div>
+                                        </div>
+                                        <div class="user-card__stat">
+                                            <p class="user-card__stat__viewed">88</p>
+                                            <p class="user-card__stat__liked">44</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
